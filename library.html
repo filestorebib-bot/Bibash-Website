@@ -1,1 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bibash Lamichhane Digital Library - Articles, notes, PDFs and presentations.">
+
+    <title>Library | Bibash Lamichhane</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/library.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">B</span>
+            <span>Bibash<span class="logo-dot">.</span></span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="library.html" class="nav-link active">
+                Library
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="library-hero">
+
+    <div class="container">
+
+        <div class="section-label">
+            <span></span>
+            DIGITAL LIBRARY
+        </div>
+
+        <h1>
+            Knowledge,
+            <span>organized.</span>
+        </h1>
+
+        <p>
+            Articles, academic notes, PDFs and presentations —
+            collected in one place for easy learning and sharing.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="library-section">
+
+    <div class="container">
+
+        <!-- SEARCH -->
+
+        <div class="library-toolbar">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="librarySearch"
+                    placeholder="Search articles, notes, presentations..."
+                    autocomplete="off"
+                >
+
+                <button id="clearSearch" class="clear-search">
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="filter-wrapper">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="articles">
+                Articles
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="notes">
+                Notes
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="pdf">
+                PDF
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="ppt">
+                Presentations
+            </button>
+
+        </div>
+
+
+        <!-- RESULTS COUNT -->
+
+        <div class="library-result-info">
+
+            <span id="resultCount">
+                6 resources
+            </span>
+
+            <span class="library-status">
+                Updated regularly
+            </span>
+
+        </div>
+
+
+        <!-- LIBRARY GRID -->
+
+        <div class="library-grid" id="libraryGrid">
+
+
+            <!-- ARTICLE -->
+
+            <article
+                class="library-card"
+                data-category="articles"
+                data-title="Agriculture in Nepali Society"
+            >
+
+                <div class="card-top">
+
+                    <span class="resource-type article-type">
+                        ARTICLE
+                    </span>
+
+                    <span class="resource-number">
+                        01
+                    </span>
+
+                </div>
+
+                <div class="resource-icon">
+                    ✦
+                </div>
+
+                <h2>
+                    Agriculture in Nepali Society
+                </h2>
+
+                <p>
+                    An educational article exploring agriculture,
+                    society, development and entrepreneurship in Nepal.
+                </p>
+
+                <div class="card-footer">
+
+                    <span>
+                        Agriculture
+                    </span>
+
+                    <button
+                        class="read-button"
+                        data-article="agriculture"
+                    >
+                        Read article →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE -->
+
+            <article
+                class="library-card"
+                data-category="articles"
+                data-title="Practical vs Theory"
+            >
+
+                <div class="card-top">
+
+                    <span class="resource-type article-type">
+                        ARTICLE
+                    </span>
+
+                    <span class="resource-number">
+                        02
+                    </span>
+
+                </div>
+
+                <div class="resource-icon">
+                    ✎
+                </div>
+
+                <h2>
+                    Practical vs Theory
+                </h2>
+
+                <p>
+                    A reflection on the importance of balancing
+                    practical learning with theoretical education.
+                </p>
+
+                <div class="card-footer">
+
+                    <span>
+                        Education
+                    </span>
+
+                    <button
+                        class="read-button"
+                        data-article="practical"
+                    >
+                        Read article →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- NOTE -->
+
+            <article
+                class="library-card"
+                data-category="notes"
+                data-title="Veterinary Pharmacology Notes"
+            >
+
+                <div class="card-top">
+
+                    <span class="resource-type note-type">
+                        NOTES
+                    </span>
+
+                    <span class="resource-number">
+                        03
+                    </span>
+
+                </div>
+
+                <div class="resource-icon">
+                    📚
+                </div>
+
+                <h2>
+                    Veterinary Pharmacology Notes
+                </h2>
+
+                <p>
+                    Study materials and revision resources for
+                    veterinary pharmacology.
+                </p>
+
+                <div class="card-footer">
+
+                    <span>
+                        Veterinary
+                    </span>
+
+                    <a
+                        href="documents/pdf/pharmacology.pdf"
+                        class="read-button"
+                        target="_blank"
+                    >
+                        Open PDF →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PDF -->
+
+            <article
+                class="library-card"
+                data-category="pdf"
+                data-title="Veterinary Hematology"
+            >
+
+                <div class="card-top">
+
+                    <span class="resource-type pdf-type">
+                        PDF
+                    </span>
+
+                    <span class="resource-number">
+                        04
+                    </span>
+
+                </div>
+
+                <div class="resource-icon">
+                    📄
+                </div>
+
+                <h2>
+                    Veterinary Hematology
+                </h2>
+
+                <p>
+                    Educational material covering basic hematological
+                    tools, techniques and veterinary applications.
+                </p>
+
+                <div class="card-footer">
+
+                    <span>
+                        Hematology
+                    </span>
+
+                    <a
+                        href="documents/pdf/hematology.pdf"
+                        class="read-button"
+                        target="_blank"
+                    >
+                        Open PDF →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PPT -->
+
+            <article
+                class="library-card"
+                data-category="ppt"
+                data-title="Genetic Modification"
+            >
+
+                <div class="card-top">
+
+                    <span class="resource-type ppt-type">
+                        PPT
+                    </span>
+
+                    <span class="resource-number">
+                        05
+                    </span>
+
+                </div>
+
+                <div class="resource-icon">
+                    ▣
+                </div>
+
+                <h2>
+                    Genetic Modification
+                </h2>
+
+                <p>
+                    Presentation covering genetic modification,
+                    transgenic animals, gene editing and CRISPR.
+                </p>
+
+                <div class="card-footer">
+
+                    <span>
+                        Genetics
+                    </span>
+
+                    <a
+                        href="documents/ppt/genetic-modification.pptx"
+                        class="read-button"
+                        download
+                    >
+                        Download PPTX →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PPT -->
+
+            <article
+                class="library-card"
+                data-category="ppt"
+                data-title="Basics of Hematological Tools"
+            >
+
+                <div class="card-top">
+
+                    <span class="resource-type ppt-type">
+                        PPT
+                    </span>
+
+                    <span class="resource-number">
+                        06
+                    </span>
+
+                </div>
+
+                <div class="resource-icon">
+                    ▣
+                </div>
+
+                <h2>
+                    Basics of Hematological Tools
+                </h2>
+
+                <p>
+                    Presentation on hematological tools and techniques
+                    used in veterinary practice.
+                </p>
+
+                <div class="card-footer">
+
+                    <span>
+                        Veterinary
+                    </span>
+
+                    <a
+                        href="documents/ppt/hematology.pptx"
+                        class="read-button"
+                        download
+                    >
+                        Download PPTX →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div class="no-results" id="noResults">
+
+            <div class="no-results-icon">
+                ⌕
+            </div>
+
+            <h3>
+                No resources found
+            </h3>
+
+            <p>
+                Try another search term or category.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ARTICLE READER -->
+
+<div class="reader-overlay" id="readerOverlay">
+
+    <div class="reader">
+
+        <header class="reader-header">
+
+            <div class="reader-brand">
+                <span class="logo-mark">B</span>
+                <span>Reading Mode</span>
+            </div>
+
+            <div class="reader-actions">
+
+                <button
+                    id="readerPdf"
+                    class="reader-action"
+                >
+                    Download PDF
+                </button>
+
+                <button
+                    id="closeReader"
+                    class="reader-close"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <article class="reader-content">
+
+            <div class="reader-meta">
+
+                <span id="readerCategory">
+                    ARTICLE
+                </span>
+
+                <span id="readerDate">
+                    September 2026
+                </span>
+
+            </div>
+
+            <h1 id="readerTitle">
+                Article Title
+            </h1>
+
+            <div class="reader-divider"></div>
+
+            <div id="readerBody" class="reader-body">
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">B</span>
+                <span>Bibash<span class="logo-dot">.</span></span>
+            </a>
+
+            <p>
+                Knowledge, education and digital resources.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <span class="footer-heading">
+                    Navigation
+                </span>
+
+                <a href="index.html">Home</a>
+                <a href="library.html">Library</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © <span id="currentYear"></span>
+                Bibash Lamichhane.
+            </span>
+
+            <span>
+                Knowledge should be shared.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/library.js"></script>
+
+</body>
+</html>
